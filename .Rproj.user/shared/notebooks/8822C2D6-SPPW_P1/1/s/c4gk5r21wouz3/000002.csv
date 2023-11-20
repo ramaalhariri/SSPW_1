@@ -1,0 +1,12 @@
+"0","# #6)
+for file in raw_data/fastq/*.fastq; do
+  count=$(head -n 1000 ""$file"" | grep -c '@')
+  echo $count;
+done
+
+"
+"1","320
+321
+347
+347
+"

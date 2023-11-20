@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>SPPW_P1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="SPPW_P1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="SPPW_P1_files/libs/quarto-html/quarto.js"></script>
+<script src="SPPW_P1_files/libs/quarto-html/popper.min.js"></script>
+<script src="SPPW_P1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="SPPW_P1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="SPPW_P1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="SPPW_P1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="SPPW_P1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="SPPW_P1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="SPPW_P1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">SPPW_P1</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="part-1" class="level1">
+<h1>Part 1</h1>
+<p>Complete the Git &amp; GitHub Fundamentals Starter course. The link to create a private GitHub repository for yourself to complete the course will be posted in CoursePlus. When you are done, add the link to the GitHub repo here:</p>
+<p>Link to your GitHub repository: https://github.com/jhu-statprogramming-fall-2023/git-github-fundamentals-ramaalhariri</p>
+</section>
+<section id="part-2" class="level1">
+<h1>Part 2</h1>
+<p>Who are you? What makes you special? What do you stand for? For example, maybe you are passionate about open science and you prioritize publishing in open-access journals or publishing open source software. Who is your audience? This is important in terms of helping you understand your professional community as a scientist. What does the community value or not value? Does this align with your interests? What is your goal? This is a very personal question and there are no wrong answers. However, it is helpful to understand what your short-term and long-terms goals are. Some questions you might think about as you try to answer these two questions are: What motivates you? What projects have others complimented you on? Which projects can I spend hours on and not feel overwhelmed or drained?</p>
+<p>I am a third year PhD student in the Human Genetics and Genomics program at the Johns Hopkins University School of Medicine. As a scientist that grew up most of my life in the Middle East, specifically Dubai, in which I studied and lived with friends from countries all around the world, I have been instilled with a love for ensuring that the scientific work I carry out is inclusive of individuals from underrepresented and understudied backgrounds. While I have and continue to work primarily in the field of genetic epidemiology, I also have an interest in medical genetics as it relates to clinical Mendelian cases. My interest lies mainly in acaademia, but I also wish to devote time to science education and advocacy - particulary as it relates to capacity building and informed decision making for individuals from underrepresented groups, ensuring that we build partnerships with local communities who feel heard and represented in science.</p>
+</section>
+<section id="part-4" class="level1">
+<h1>Part 4</h1>
+<div class="cell" data-engine.opts="-i">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note, though I installed homebrew on my terminal, I was still unable to run these functions so I wrote the different functions I tried as well as commented out my code because I could not produce an output</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># wget "https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/*.fastq"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#this worked </span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/stephaniehicks/jhustatprogramming2023/raw/main/data/SRR1039508_subset_1.fastq</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/stephaniehicks/jhustatprogramming2023/raw/main/data/SRR1039509_subset_1.fastq</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/stephaniehicks/jhustatprogramming2023/raw/main/data/SRR1039512_subset_1.fastq</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/stephaniehicks/jhustatprogramming2023/raw/main/data/SRR1039513_subset_1.fastq</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># I tried to do something like below</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">#wget '*.fastq' https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>--2023-11-20 13:17:35--  https://github.com/stephaniehicks/jhustatprogramming2023/raw/main/data/SRR1039508_subset_1.fastq
+Resolving github.com (github.com)... 140.82.113.3
+Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039508_subset_1.fastq [following]
+--2023-11-20 13:17:35--  https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039508_subset_1.fastq
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1082375 (1.0M) [text/plain]
+Saving to: ‘SRR1039508_subset_1.fastq.1’
+
+     0K .......... .......... .......... .......... ..........  4% 3.74M 0s
+    50K .......... .......... .......... .......... ..........  9% 5.69M 0s
+   100K .......... .......... .......... .......... .......... 14% 13.3M 0s
+   150K .......... .......... .......... .......... .......... 18% 9.18M 0s
+   200K .......... .......... .......... .......... .......... 23% 22.2M 0s
+   250K .......... .......... .......... .......... .......... 28% 14.6M 0s
+   300K .......... .......... .......... .......... .......... 33% 13.0M 0s
+   350K .......... .......... .......... .......... .......... 37% 18.7M 0s
+   400K .......... .......... .......... .......... .......... 42% 9.23M 0s
+   450K .......... .......... .......... .......... .......... 47% 34.4M 0s
+   500K .......... .......... .......... .......... .......... 52% 12.4M 0s
+   550K .......... .......... .......... .......... .......... 56% 19.5M 0s
+   600K .......... .......... .......... .......... .......... 61% 11.9M 0s
+   650K .......... .......... .......... .......... .......... 66% 15.9M 0s
+   700K .......... .......... .......... .......... .......... 70% 15.7M 0s
+   750K .......... .......... .......... .......... .......... 75% 28.7M 0s
+   800K .......... .......... .......... .......... .......... 80% 7.62M 0s
+   850K .......... .......... .......... .......... .......... 85% 35.4M 0s
+   900K .......... .......... .......... .......... .......... 89% 7.31M 0s
+   950K .......... .......... .......... .......... .......... 94% 20.1M 0s
+  1000K .......... .......... .......... .......... .......... 99% 16.8M 0s
+  1050K .......                                               100%  140K=0.09s
+
+2023-11-20 13:17:35 (11.8 MB/s) - ‘SRR1039508_subset_1.fastq.1’ saved [1082375/1082375]
+
+--2023-11-20 13:17:35--  https://github.com/stephaniehicks/jhustatprogramming2023/raw/main/data/SRR1039509_subset_1.fastq
+Resolving github.com (github.com)... 140.82.113.3
+Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039509_subset_1.fastq [following]
+--2023-11-20 13:17:35--  https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039509_subset_1.fastq
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1092986 (1.0M) [text/plain]
+Saving to: ‘SRR1039509_subset_1.fastq.1’
+
+     0K .......... .......... .......... .......... ..........  4% 3.57M 0s
+    50K .......... .......... .......... .......... ..........  9% 9.38M 0s
+   100K .......... .......... .......... .......... .......... 14% 6.28M 0s
+   150K .......... .......... .......... .......... .......... 18% 10.5M 0s
+   200K .......... .......... .......... .......... .......... 23% 9.42M 0s
+   250K .......... .......... .......... .......... .......... 28% 10.7M 0s
+   300K .......... .......... .......... .......... .......... 32% 12.3M 0s
+   350K .......... .......... .......... .......... .......... 37% 19.4M 0s
+   400K .......... .......... .......... .......... .......... 42% 13.8M 0s
+   450K .......... .......... .......... .......... .......... 46% 17.7M 0s
+   500K .......... .......... .......... .......... .......... 51% 10.7M 0s
+   550K .......... .......... .......... .......... .......... 56% 12.5M 0s
+   600K .......... .......... .......... .......... .......... 60% 19.2M 0s
+   650K .......... .......... .......... .......... .......... 65% 12.7M 0s
+   700K .......... .......... .......... .......... .......... 70% 17.6M 0s
+   750K .......... .......... .......... .......... .......... 74% 18.2M 0s
+   800K .......... .......... .......... .......... .......... 79% 16.1M 0s
+   850K .......... .......... .......... .......... .......... 84% 8.00M 0s
+   900K .......... .......... .......... .......... .......... 89% 28.9M 0s
+   950K .......... .......... .......... .......... .......... 93% 10.1M 0s
+  1000K .......... .......... .......... .......... .......... 98% 19.1M 0s
+  1050K .......... .......                                    100% 13.0M=0.09s
+
+2023-11-20 13:17:35 (11.1 MB/s) - ‘SRR1039509_subset_1.fastq.1’ saved [1092986/1092986]
+
+--2023-11-20 13:17:35--  https://github.com/stephaniehicks/jhustatprogramming2023/raw/main/data/SRR1039512_subset_1.fastq
+Resolving github.com (github.com)... 140.82.113.3
+Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039512_subset_1.fastq [following]
+--2023-11-20 13:17:35--  https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039512_subset_1.fastq
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1293767 (1.2M) [text/plain]
+Saving to: ‘SRR1039512_subset_1.fastq.1’
+
+     0K .......... .......... .......... .......... ..........  3% 3.65M 0s
+    50K .......... .......... .......... .......... ..........  7% 5.29M 0s
+   100K .......... .......... .......... .......... .......... 11% 34.0M 0s
+   150K .......... .......... .......... .......... .......... 15% 6.19M 0s
+   200K .......... .......... .......... .......... .......... 19% 8.63M 0s
+   250K .......... .......... .......... .......... .......... 23% 16.3M 0s
+   300K .......... .......... .......... .......... .......... 27% 29.6M 0s
+   350K .......... .......... .......... .......... .......... 31% 8.83M 0s
+   400K .......... .......... .......... .......... .......... 35% 9.46M 0s
+   450K .......... .......... .......... .......... .......... 39% 33.7M 0s
+   500K .......... .......... .......... .......... .......... 43% 13.8M 0s
+   550K .......... .......... .......... .......... .......... 47% 18.5M 0s
+   600K .......... .......... .......... .......... .......... 51% 19.0M 0s
+   650K .......... .......... .......... .......... .......... 55% 12.2M 0s
+   700K .......... .......... .......... .......... .......... 59% 24.0M 0s
+   750K .......... .......... .......... .......... .......... 63% 8.38M 0s
+   800K .......... .......... .......... .......... .......... 67% 28.1M 0s
+   850K .......... .......... .......... .......... .......... 71% 13.4M 0s
+   900K .......... .......... .......... .......... .......... 75% 19.5M 0s
+   950K .......... .......... .......... .......... .......... 79% 9.61M 0s
+  1000K .......... .......... .......... .......... .......... 83% 20.1M 0s
+  1050K .......... .......... .......... .......... .......... 87% 9.55M 0s
+  1100K .......... .......... .......... .......... .......... 91% 19.0M 0s
+  1150K .......... .......... .......... .......... .......... 94% 13.9M 0s
+  1200K .......... .......... .......... .......... .......... 98% 18.5M 0s
+  1250K .......... ...                                        100% 17.7M=0.1s
+
+2023-11-20 13:17:35 (11.8 MB/s) - ‘SRR1039512_subset_1.fastq.1’ saved [1293767/1293767]
+
+--2023-11-20 13:17:35--  https://github.com/stephaniehicks/jhustatprogramming2023/raw/main/data/SRR1039513_subset_1.fastq
+Resolving github.com (github.com)... 140.82.113.3
+Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039513_subset_1.fastq [following]
+--2023-11-20 13:17:35--  https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039513_subset_1.fastq
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1144726 (1.1M) [text/plain]
+Saving to: ‘SRR1039513_subset_1.fastq.1’
+
+     0K .......... .......... .......... .......... ..........  4% 3.28M 0s
+    50K .......... .......... .......... .......... ..........  8% 4.80M 0s
+   100K .......... .......... .......... .......... .......... 13% 14.1M 0s
+   150K .......... .......... .......... .......... .......... 17% 15.8M 0s
+   200K .......... .......... .......... .......... .......... 22% 11.5M 0s
+   250K .......... .......... .......... .......... .......... 26% 4.96M 0s
+   300K .......... .......... .......... .......... .......... 31% 12.1M 0s
+   350K .......... .......... .......... .......... .......... 35% 20.0M 0s
+   400K .......... .......... .......... .......... .......... 40% 8.25M 0s
+   450K .......... .......... .......... .......... .......... 44% 11.1M 0s
+   500K .......... .......... .......... .......... .......... 49% 10.4M 0s
+   550K .......... .......... .......... .......... .......... 53% 21.4M 0s
+   600K .......... .......... .......... .......... .......... 58% 16.9M 0s
+   650K .......... .......... .......... .......... .......... 62% 16.1M 0s
+   700K .......... .......... .......... .......... .......... 67% 21.5M 0s
+   750K .......... .......... .......... .......... .......... 71% 14.4M 0s
+   800K .......... .......... .......... .......... .......... 76% 18.1M 0s
+   850K .......... .......... .......... .......... .......... 80% 14.9M 0s
+   900K .......... .......... .......... .......... .......... 84% 13.0M 0s
+   950K .......... .......... .......... .......... .......... 89% 9.50M 0s
+  1000K .......... .......... .......... .......... .......... 93% 56.4M 0s
+  1050K .......... .......... .......... .......... .......... 98% 15.7M 0s
+  1100K .......... .......                                    100% 16.1M=0.1s
+
+2023-11-20 13:17:36 (10.8 MB/s) - ‘SRR1039513_subset_1.fastq.1’ saved [1144726/1144726]</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># #2)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># mkdir -p raw_data/fastq</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># #3)</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># mv *.fastq raw_data/fastq</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># #4)</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> raw_data/fastq/<span class="pp">*</span><span class="dt">{</span>12<span class="op">,</span>13<span class="dt">}</span><span class="pp">*</span>fastq</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>raw_data/fastq/SRR1039512_subset_1.fastq
+raw_data/fastq/SRR1039513_subset_1.fastq</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># #5)</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="at">-B</span> 2 <span class="at">-A</span> 4 <span class="st">"NNNN"</span> raw_data/fastq/SRR1039512_subset_1.fastq</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>DIJJJJJIIIJGHGFHIIIAEEHIIIID@DFHIIJJIGGGCHGIIIAAEHFFFDDD;?BDDD@
+@SRR1039512.24252150/1
+GGTGTTGGACGGTNTNANNNNGNGNNCGGANAGAGNCGAGTTCTCCTACCAGGAGATGNNNGC
++
+HJFGIGIJGHII8#1#0####0#0##0-BB#-5@C#-;?EAEFFFFFFEEDEC??=A######
+@SRR1039512.15382517/1
+AGGAACTACTTGGAGACTTGGATGACATCCTCGTCGATCTCACACTGGACCACGGACTCCACG</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># #6)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> file <span class="kw">in</span> raw_data/fastq/<span class="pp">*</span>.fastq<span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="va">count</span><span class="op">=</span><span class="va">$(</span><span class="fu">head</span> <span class="at">-n</span> 1000 <span class="st">"</span><span class="va">$file</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-c</span> <span class="st">'@'</span><span class="va">)</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="va">$count</span><span class="kw">;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>320
+321
+347
+347</code></pre>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

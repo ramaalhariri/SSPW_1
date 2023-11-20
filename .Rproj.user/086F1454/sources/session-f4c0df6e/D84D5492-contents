@@ -1,0 +1,69 @@
+---
+title: "SPPW_P1"
+knitr: true
+---
+
+
+# Part 1
+
+Complete the Git & GitHub Fundamentals Starter course. The link to create a private GitHub repository for yourself to complete the course will be posted in CoursePlus. When you are done, add the link to the GitHub repo here:
+
+Link to your GitHub repository: https://github.com/jhu-statprogramming-fall-2023/git-github-fundamentals-ramaalhariri 
+
+# Part 2
+
+Who are you? What makes you special?
+What do you stand for? For example, maybe you are passionate about open science and you prioritize publishing in open-access journals or publishing open source software.
+Who is your audience? This is important in terms of helping you understand your professional community as a scientist. What does the community value or not value? Does this align with your interests?
+What is your goal? This is a very personal question and there are no wrong answers. However, it is helpful to understand what your short-term and long-terms goals are. Some questions you might think about as you try to answer these two questions are:
+What motivates you?
+What projects have others complimented you on?
+Which projects can I spend hours on and not feel overwhelmed or drained?
+
+I am a third year PhD student in the Human Genetics and Genomics program at the Johns Hopkins University School of Medicine. As a scientist that grew up most of my life in the Middle East, specifically Dubai, in which I studied and lived with friends from countries all around the world, I have been instilled with a love for ensuring that the scientific work I carry out is inclusive of individuals from underrepresented and understudied backgrounds. While I have and continue to work primarily in the field of genetic epidemiology, I also have an interest in medical genetics as it relates to clinical Mendelian cases. My interest lies mainly in acaademia, but I also wish to devote time to science education and advocacy  - particulary as it relates to capacity building and informed decision making for individuals from underrepresented groups, ensuring that we build partnerships with local communities who feel heard and represented in science.
+
+
+# Part 4
+
+```{zsh, engine.opts='-i'}
+# Note, though I installed homebrew on my terminal, I was still unable to run these functions so I wrote the different functions I tried as well as commented out my code because I could not produce an output
+
+# wget "https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/*.fastq"
+
+
+#this worked 
+wget https://github.com/stephaniehicks/jhustatprogramming2023/raw/main/data/SRR1039508_subset_1.fastq
+wget https://github.com/stephaniehicks/jhustatprogramming2023/raw/main/data/SRR1039509_subset_1.fastq
+wget https://github.com/stephaniehicks/jhustatprogramming2023/raw/main/data/SRR1039512_subset_1.fastq
+wget https://github.com/stephaniehicks/jhustatprogramming2023/raw/main/data/SRR1039513_subset_1.fastq
+
+# I tried to do something like below
+#wget '*.fastq' https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data
+```
+
+```{zsh}
+# #2)
+# mkdir -p raw_data/fastq
+# 
+# #3)
+# mv *.fastq raw_data/fastq
+# 
+# #4)
+ls raw_data/fastq/*{12,13}*fastq
+```
+
+```{zsh}
+# #5)
+grep -B 2 -A 4 "NNNN" raw_data/fastq/SRR1039512_subset_1.fastq
+```
+
+```{zsh}
+# #6)
+for file in raw_data/fastq/*.fastq; do
+  count=$(head -n 1000 "$file" | grep -c '@')
+  echo $count;
+done
+```
+
+
+

@@ -1,0 +1,7 @@
+library(here)
+here("raw_data")
+
+read.csv(here("raw_data", "fastq","SRR1039508_subset_1.csv"))
+
+# read.csv("/Users/ramaalhariri/SPPW_P1/raw_data/fastq/SRR1039508_subset_1.fastq")
+read.csv("/Users/stephanie/SPPW_P1/raw_data/fastq/SRR1039508_subset_1.fastq")
